@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|Greenwood High School - Excellence in Education</title>
+    <meta name="description" content="|Greenwood High School offers comprehensive education from kindergarten through high school with state-of-the-art facilities and dedicated faculty.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ 
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e40af",
+                        secondary: "#3b82f6",
+                        accent: "#f59e0b",
+                        dark: "#1f2937",
+                        light: "#f8fafc"
+                    },
+                    fontFamily: {
+                        'heading': ['Georgia', 'serif'],
+                        'body': ['Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-light font-body">
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="w-10 h-10 flex items-center justify-center mr-3">
+                        <!-- <span class="text-white font-bold text-xl">PA</span> -->
+                       <a href="./index.html">
+                         <img src="./images/Greenwood-logo-removebg-preview.png" alt="Logo"></a>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-dark font-heading">|Greenwood High School</h1>
+                        <p class="text-sm text-gray-600">Excellence in Education Since 1985</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="./home.html" class="text-dark hover:text-primary font-medium transition-colors" >Home</a>
+                    <a href="./about.html" class="text-dark hover:text-primary font-medium transition-colors" >About</a>
+                    <a href="./acadmics.html" class="text-dark hover:text-primary font-medium transition-colors" >Academics</a>
+                    <a href="#" class="text-dark hover:text-primary font-medium transition-colors" >Facilities</a>
+                    <a href="./addmission.html" class="text-dark hover:text-primary font-medium transition-colors" >Admissions</a>
+                    <a href="./contact.html" class="text-dark hover:text-primary font-medium transition-colors">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-dark" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-white py-4 border-t">
+                <div class="flex flex-col space-y-4">
+                    <a href="#" class="text-dark hover:text-primary font-medium" onclick="event.preventDefault(); scrollToSection('home')">Home</a>
+                    <a href="#" class="text-dark hover:text-primary font-medium" onclick="event.preventDefault(); scrollToSection('about')">About</a>
+                    <a href="#" class="text-dark hover:text-primary font-medium" onclick="event.preventDefault(); scrollToSection('academics')">Academics</a>
+                    <a href="#" class="text-dark hover:text-primary font-medium" onclick="event.preventDefault(); scrollToSection('facilities')">Facilities</a>
+                    <a href="#" class="text-dark hover:text-primary font-medium" onclick="event.preventDefault(); scrollToSection('admissions')">Admissions</a>
+                    <a href="#" class="text-dark hover:text-primary font-medium" onclick="event.preventDefault(); scrollToSection('contact')">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-6xl font-bold mb-6 font-heading">Shaping Tomorrow's Leaders</h2>
+                    <p class="text-xl mb-8 opacity-90">Providing exceptional education that inspires curiosity, fosters creativity, and builds character for a lifetime of success.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="bg-accent text-dark px-8 py-3 rounded-lg font-bold hover:bg-yellow-500 transition-colors" onclick="scrollToSection('admissions')">Apply Now</button>
+                        <button class="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-primary transition-colors" onclick="scrollToSection('about')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats Section -->
+        <section class="bg-white py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold text-primary mb-2">1,250+</div>
+                        <div class="text-gray-600">Students Enrolled</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-primary mb-2">95%</div>
+                        <div class="text-gray-600">Graduation Rate</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-primary mb-2">85</div>
+                        <div class="text-gray-600">Certified Teachers</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-primary mb-2">25+</div>
+                        <div class="text-gray-600">Sports Teams</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h2 class="text-4xl font-bold text-dark mb-4 font-heading">About |Greenwood High School</h2>
+                    <p class="text-lg text-gray-600">Founded in 1985, |Greenwood High School has been at the forefront of educational excellence, nurturing young minds to become responsible global citizens.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                       <img src="./images/school-front.webp" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-dark mb-4">Our Mission & Vision</h3>
+                        <p class="text-gray-600 mb-6">We are committed to providing a nurturing environment where students can discover their passions, develop critical thinking skills, and build strong character foundations.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                                <span class="text-gray-700">Personalized learning approach for each student</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                                <span class="text-gray-700">State-of-the-art technology integration</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                                <span class="text-gray-700">Comprehensive extracurricular programs</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                                <span class="text-gray-700">Strong community partnerships</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academics Section -->
+        <section id="academics" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h2 class="text-4xl font-bold text-dark mb-4 font-heading">Academic Programs</h2>
+                    <p class="text-lg text-gray-600">Our comprehensive curriculum is designed to challenge and inspire students at every level.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-light p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-child text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-4 text-center">Elementary School</h3>
+                        <p class="text-gray-600 text-center">Building strong foundations in literacy, numeracy, and social skills through engaging, hands-on learning experiences.</p>
+                    </div>
+                    <div class="bg-light p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-book text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-4 text-center">Middle School</h3>
+                        <p class="text-gray-600 text-center">Developing critical thinking and problem-solving skills through interdisciplinary projects and exploratory learning.</p>
+                    </div>
+                    <div class="bg-light p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-4 text-center">High School</h3>
+                        <p class="text-gray-600 text-center">College-preparatory curriculum with Advanced Placement courses and specialized career pathways.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section id="facilities" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h2 class="text-4xl font-bold text-dark mb-4 font-heading">Our Facilities</h2>
+                    <p class="text-lg text-gray-600">Modern learning environments designed to inspire creativity and collaboration.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                       <img src="./images/laboratory.avif" alt="">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-dark mb-2">Science Labs</h3>
+                            <p class="text-gray-600">Fully equipped laboratories for physics, chemistry, and biology experiments.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <img src="./images/libary.jpg" alt="">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-dark mb-2">Library & Media Center</h3>
+                            <p class="text-gray-600">Extensive collection of books, digital resources, and collaborative study spaces.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                   <img src="./images/Athletic Complex.webp" alt="">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-dark mb-2">Athletic Complex</h3>
+                            <p class="text-gray-600">State-of-the-art gymnasium, swimming pool, and outdoor sports facilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions Section -->
+        <section id="admissions" class="py-20 bg-primary text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4 font-heading">Join Our Community</h2>
+                        <p class="text-xl opacity-90">Take the first step toward an exceptional educational journey at |Greenwood High School.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Admissions Process</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <span class="text-dark font-bold">1</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Submit Application</h4>
+                                    <p class="opacity-90">Complete our online application form with required documents.</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <span class="text-dark font-bold">2</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Student Assessment</h4>
+                                    <p class="opacity-90">Participate in age-appropriate assessments and interviews.</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <span class="text-dark font-bold">3</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Admission Decision</h4>
+                                    <p class="opacity-90">Receive notification of admission status within 2-3 weeks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white text-dark p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Request Information</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <input type="text" placeholder="Full Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email Address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                    <option value="">Select Grade Level</option>
+                                    <option value="elementary">Elementary School</option>
+                                    <option value="middle">Middle School</option>
+                                    <option value="high">High School</option>
+                                </select>
+                            </div>
+                            <button type="button" class="w-full bg-accent text-dark py-3 rounded-lg font-bold hover:bg-yellow-500 transition-colors">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h2 class="text-4xl font-bold text-dark mb-4 font-heading">What Parents & Students Say</h2>
+                    <p class="text-lg text-gray-600">Hear from our community about their experiences at |Greenwood High School.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-light p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <img 
+                                src="https://picsum.photos/80?random=5" 
+                                alt="Parent testimonial - Sarah Johnson" 
+                                class="w-12 h-12 rounded-full mr-4"
+                                loading="lazy"
+                            />
+                            <div>
+                                <h4 class="font-bold text-dark">Sarah Johnson</h4>
+                                <p class="text-sm text-gray-600">Parent of 7th Grader</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">"The teachers at |Greenwood High School go above and beyond to ensure each child receives personalized attention and support."</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <img 
+                                src="https://picsum.photos/80?random=6" 
+                                alt="Student testimonial - Michael Chen" 
+                                class="w-12 h-12 rounded-full mr-4"
+                                loading="lazy"
+                            />
+                            <div>
+                                <h4 class="font-bold text-dark">Michael Chen</h4>
+                                <p class="text-sm text-gray-600">Class of 2023</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">"The diverse extracurricular activities helped me discover my passion for robotics and engineering."</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <img 
+                                src="https://picsum.photos/80?random=7" 
+                                alt="Parent testimonial - David Rodriguez" 
+                                class="w-12 h-12 rounded-full mr-4"
+                                loading="lazy"
+                            />
+                            <div>
+                                <h4 class="font-bold text-dark">David Rodriguez</h4>
+                                <p class="text-sm text-gray-600">Parent of 5th Grader</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">"We've seen remarkable growth in our daughter's confidence and academic abilities since joining Pinewood."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h2 class="text-4xl font-bold text-dark mb-4 font-heading">Contact Us</h2>
+                    <p class="text-lg text-gray-600">We're here to answer your questions and help you learn more about |Greenwood High School.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold text-dark mb-6">Get In Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">Address</h4>
+                                    <p class="text-gray-600">123 Education Lane, Pinewood City, PC 12345</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">Phone</h4>
+                                    <p class="text-gray-600">(555) 123-4567</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">Email</h4>
+                                    <p class="text-gray-600">admissions@greenwoodhighschool.edu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <input type="text" placeholder="First Name" class="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            <input type="text" placeholder="Last Name" class="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <input type="email" placeholder="Email Address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            <button type="button" class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                        <span class="text-white font-bold">PA</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold font-heading">|Greenwood High School</h3>
+                </div>
+                <p class="text-gray-400 mb-6">Shaping tomorrow's leaders through excellence in education, character development, and community engagement.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault()">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault()">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault()">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault()">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" >About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" >Academic Calendar</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" >School Events</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault()">Parent Portal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault()">Student Handbook</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault()">Lunch Menu</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault()">Athletics Schedule</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault()">Employment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 |Greenwood High School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Define school data
+        const schoolInfo = {
+            "name": "|Greenwood High School",
+            "founded": 1985,
+            "address": "123 Education Lane, Pinewood City, PC 12345",
+            "phone": "(555) 123-4567",
+            "email": "admissions@pinewoodacademy.edu"
+        };
+
+        // Navigation functions
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ 
+                behavior: "smooth" 
+            });
+            // Close mobile menu if open
+            document.getElementById("mobileMenu").classList.add("hidden");
+        }
+
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById("mobileMenu");
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        // Form handling
+        document.addEventListener("DOMContentLoaded", function(){
+            const forms = document.querySelectorAll("form");
+            forms.forEach(form => {
+                form.addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    alert("Thank you for your interest! We will contact you shortly.");
+            form.reset();
+        });
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll("a[href^=""]").forEach(anchor => {
+            anchor.addEventListener("click", function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                scrollToSection(targetId);
+            });
+        });
+    </script>
+</body>
+</html>

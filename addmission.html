@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions |Greenwood High School</title>
+    <link rel="stylesheet" href="addmision.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h1>Greenwood <span>High School </span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./acadmics.html">Academics</a></li>
+                    <li><a href="./addmission.html">Admissions</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#application-form" class="admission-btn">Apply Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Begin Your Journey to Excellence</h2>
+            <p>Join our community of learners, innovators, and future leaders. Excellence Academy offers a transformative educational experience that prepares students for success in an ever-changing world.</p>
+            <a href="#application-form" class="cta-button">Start Your Application</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Admission Process -->
+            <div class="section-title">
+                <h2>Admission Process</h2>
+                <p>Our admission process is designed to be transparent and straightforward. Follow these simple steps to join our academic community.</p>
+            </div>
+            
+            <div class="process-container">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Inquiry & Visit</h3>
+                    <p>Submit an inquiry form and schedule a campus tour to experience our facilities and meet our faculty.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Submit Application</h3>
+                    <p>Complete the online application form and submit all required documents by the deadline.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Assessment & Interview</h3>
+                    <p>Students may be invited for an assessment test and interview as part of the evaluation process.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Admission Decision</h3>
+                    <p>Receive your admission decision within 2-3 weeks after completing all requirements.</p>
+                </div>
+            </div>
+
+            <!-- Application Form -->
+            <div class="section-title">
+                <h2 id="application-form">Application Form</h2>
+                <p>Please fill out the form below to begin your application process. Fields marked with * are required.</p>
+            </div>
+            
+            <div class="form-container">
+                <form id="admissionForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="grade">Grade Applying For *</label>
+                            <select id="grade" class="form-control" required>
+                                <option value="">Select Grade</option>
+                                <option value="pre-k">Pre-Kindergarten</option>
+                                <option value="k">Kindergarten</option>
+                                <option value="1">Grade 1</option>
+                                <option value="2">Grade 2</option>
+                                <option value="3">Grade 3</option>
+                                <option value="4">Grade 4</option>
+                                <option value="5">Grade 5</option>
+                                <option value="6">Grade 6</option>
+                                <option value="7">Grade 7</option>
+                                <option value="8">Grade 8</option>
+                                <option value="9">Grade 9</option>
+                                <option value="10">Grade 10</option>
+                                <option value="11">Grade 11</option>
+                                <option value="12">Grade 12</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dob">Date of Birth *</label>
+                            <input type="date" id="dob" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="address">Home Address *</label>
+                        <input type="text" id="address" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="parentName">Parent/Guardian Name *</label>
+                            <input type="text" id="parentName" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="parentOccupation">Parent Occupation</label>
+                            <input type="text" id="parentOccupation" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="previousSchool">Previous School (if applicable)</label>
+                        <input type="text" id="previousSchool" class="form-control">
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" class="form-control" rows="4" placeholder="Any additional information you'd like to share..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Requirements Section -->
+    <section class="requirements">
+        <div class="container">
+            <div class="section-title">
+                <h2>Admission Requirements</h2>
+                <p>To ensure a smooth application process, please review the following requirements before submitting your application.</p>
+            </div>
+            
+            <div class="requirements-grid">
+                <div class="requirement-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Application Form</h3>
+                    <p>Complete the online application form with accurate information. Incomplete forms may delay the admission process.</p>
+                </div>
+                
+                <div class="requirement-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Academic Records</h3>
+                    <p>Submit transcripts or report cards from the previous two academic years, along with any standardized test scores.</p>
+                </div>
+                
+                <div class="requirement-card">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>Recommendation Letters</h3>
+                    <p>Two recommendation letters from teachers or school administrators who know the applicant well.</p>
+                </div>
+                
+                <div class="requirement-card">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Health Records</h3>
+                    <p>Provide up-to-date immunization records and a recent physical examination report.</p>
+                </div>
+                
+                <div class="requirement-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Identification Documents</h3>
+                    <p>Submit a copy of the applicant's birth certificate and a recent passport-sized photograph.</p>
+                </div>
+                
+                <div class="requirement-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Application Fee</h3>
+                    <p>A non-refundable application fee of $75 is required to process your application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Excellence Academy</h3>
+                    <p>Providing quality education since 1995. Our mission is to nurture curious minds and develop responsible global citizens.</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Academic City</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> admissions@excellenceacademy.edu</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="./home.html">Home</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./acadmics.html">Academic Programs</a>
+                    <a href="./addmission.html">Admissions</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Important Dates</h3>
+                    <p>Fall Admission Deadline: August 15</p>
+                    <p>Spring Admission Deadline: January 10</p>
+                    <p>Entrance Exams: September 5 & March 12</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Excellence Academy. All rights reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> for education</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('admissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const grade = document.getElementById('grade').value;
+            
+            // In a real application, you would send this data to a server
+            // For this demo, we'll just show a success message
+            alert(`Thank you ${firstName} ${lastName}! Your application for Grade ${grade} has been submitted successfully. We will contact you at ${email} within 3 business days.`);
+            
+            // Reset form
+            document.getElementById('admissionForm').reset();
+            
+            // Scroll to top
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+            }
+        });
+    </script>
+
+
+ </body>
+</html>
